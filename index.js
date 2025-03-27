@@ -14,4 +14,8 @@ app.get('/', (req, res) => {
     res.send('Hello Client!');
 });
 
+app.get('/api', (req, res) => {
+    res.send('Hello Client from API!');
+});
+
 app.listen(3000, () => { console.log('Server is up on port 3000!') });
